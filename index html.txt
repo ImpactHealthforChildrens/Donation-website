@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>UN Donation Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Support Global Humanitarian Projects</h1>
+    <p>Your donation helps millions affected by crisis.</p>
+  </header>
+
+  <main>
+    <h2>Select Donation Amount</h2>
+    <div class="donation-options">
+      <button onclick="selectAmount(10)">$10</button>
+      <button onclick="selectAmount(25)">$25</button>
+      <button onclick="selectAmount(50)">$50</button>
+      <button onclick="selectAmount(100)">$100</button>
+    </div>
+
+    <input type="text" id="customAmount" placeholder="Or enter custom amount" />
+    <br><br>
+    <button class="donate-btn" onclick="donate()">Donate Now</button>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Global Support | Inspired by United Nations</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
